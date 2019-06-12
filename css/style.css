@@ -1,2 +1,11 @@
+body {
+  display: flex;
+  padding: 22px;
+  max-width: 1200px;
+}
+
+h1 {
+  color: bisque;
+}
 
 /*# sourceMappingURL=style.css.map */
