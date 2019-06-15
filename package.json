@@ -1,7 +1,7 @@
 {
   "name": "learning-git-3",
   "version": "1.0.0",
-  "description": "https://dawid-zajac.github.io/learning-git-2/",
+  "description": "https://dawid-zajac.github.io/zadanie-9-1/",
   "main": "index.js",
   "dependencies": {
     "node-sass": "^4.12.0"
@@ -21,7 +21,7 @@
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm-run-all build:* ",
-    "build:clean": "rimraf D:/projekty/learning-git-2/css -r",
+    "build:clean": "rimraf D:/projekty/zadanie-9-1/css -r",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
@@ -34,10 +34,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dawid-zajac/learning-git-2.git"
+    "url": "git+https://github.com/dawid-zajac/zadanie-9-1.git"
   },
   "bugs": {
-    "url": "https://github.com/dawid-zajac/learning-git-2/issues"
+    "url": "https://github.com/dawid-zajac/zadanie-9-1/issues"
   },
-  "homepage": "https://github.com/dawid-zajac/learning-git-2#readme"
+  "homepage": "https://github.com/dawid-zajac/zadanie-9-1#readme"
 }

@@ -1,9 +1,5 @@
-body {
-    display: flex;
-    padding: 22px;
-    max-width: 1200px;
-}
-h1 {
-    color: bisque;
-}
+$primary-color: #333;
 
+body {
+    background-color: $primary-color;
+}
