@@ -1,5 +1,10 @@
-$primary-color: #333;
+$primary-color: rgb(242, 243, 242);
+
 
 body {
     background-color: $primary-color;
+}
+h2 {
+    color: rebeccapurple;
+    font-style: 10px; 
 }

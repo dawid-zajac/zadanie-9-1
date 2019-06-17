@@ -1,9 +1,15 @@
 {
-    "liveSassCompile.settings.formats" :[
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false,
+    "liveSassCompile.settings.formats": [
         {
-        "format": "compressed",
-        "extensionName": ".css",
-        "savePath": "/dist/css"
-    }
-]
+            "format": "expanded",
+            "extensionName": ".min.css",
+            "savePath": "/dist/css"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false
+
 }
