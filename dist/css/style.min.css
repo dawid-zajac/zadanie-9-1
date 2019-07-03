@@ -16,7 +16,6 @@ header {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  border: solid #d9ff00 5px;
   width: 100%;
   height: 35px;
   position: fixed;
@@ -56,7 +55,6 @@ button {
 .conteiner {
   display: block;
   background-color: white;
-  border: solid red 5px;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
@@ -66,10 +64,10 @@ button {
   width: 80%;
   padding: 40px;
   left: 10%;
+  height: 80%;
 }
 
 .sidebar {
-  border: solid red 5px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -107,6 +105,29 @@ li {
   text-align: center;
 }
 
+.box {
+  height: 180px;
+  width: 600px;
+  margin: auto;
+  border: solid red 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.statistic {
+  font-size: 16px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 4px;
+  left: 0;
+}
+
 h2 {
   font-size: 17px;
 }
@@ -115,16 +136,23 @@ h1 {
   font-size: 25px;
 }
 
+.gray-fount {
+  color: #a8a8a8;
+  font-family: 'Hind', sans-serif;
+}
+
 .profil {
   position: relative;
 }
 
 .circle {
   position: absolute;
-  background-color: green;
-  width: 6px;
-  height: 6px;
+  background-color: #66ff66;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
+  top: 3px;
+  left: 0;
 }
 
 .first-part-conteiner {
@@ -132,10 +160,35 @@ h1 {
   margin-bottom: 10px;
   height: 50%;
   width: 80%;
+  margin: auto;
 }
 
 .secound-part-conteiner {
   border: solid #a8a8a8 0.05px;
   height: 50%;
   width: 80%;
+  margin: auto;
+}
+
+.thecenter {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar-title {
+  font-family: 'Mr Dafoe', cursive;
+}
+
+img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.name-of-manager {
+  left: 15px;
+  top: 6px;
+  color: #17b2c7;
 }
