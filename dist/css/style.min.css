@@ -10,22 +10,23 @@ body {
 }
 
 header {
+  font-family: 'Raleway', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  width: 100%;
+  width: 95%;
   position: fixed;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-left: 10%;
   -ms-flex-item-align: start;
       align-self: flex-start;
   z-index: 999;
   background-color: white;
+  margin-left: 13%;
 }
 
 nav.row {
@@ -47,9 +48,20 @@ nav.row {
 .button-simple {
   background-color: #ff9933;
   padding: 10px;
-  margin: 0 auto;
   text-align: center;
   top: 20px;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.calendar {
+  padding: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .conteiner {
@@ -58,11 +70,10 @@ nav.row {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
-  top: 35px;
-  width: 80%;
+  width: 90%;
   padding: 40px;
-  left: 10%;
-  height: 80%;
+  margin: auto;
+  height: 90%;
   position: relative;
 }
 
@@ -70,15 +81,19 @@ nav.row {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  width: 10%;
+  width: 13%;
   position: fixed;
   height: 100vh;
   background-color: black;
   color: white;
 }
 
+.sidebar-menu {
+  border-bottom: solid #a8a8a8 0.05px;
+}
+
 .row {
-  padding: 20px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,6 +135,22 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
+}
+
+.img-wykres {
+  width: 60%;
+  height: 40%;
+  margin: auto;
+  display: block;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  padding-left: 20px;
 }
 
 .statistic {
@@ -162,11 +193,11 @@ h1 {
 .circle {
   position: absolute;
   background-color: #66ff66;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   top: 3px;
-  left: 44px;
+  left: 50px;
 }
 
 .first-part-conteiner {
@@ -194,7 +225,15 @@ h1 {
   width: 80%;
   padding: 40px;
   left: 10%;
-  height: 48%;
+  height: 60%;
+}
+
+.title-links-position {
+  width: 40%;
+}
+
+.links-position {
+  margin-right: 60px;
 }
 
 .thecenter {
@@ -209,21 +248,48 @@ h1 {
   display: flex;
 }
 
+.thecenter-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .sidebar-title {
   font-family: 'Mr Dafoe', cursive;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.title-sidebar-icon {
+  position: absolute;
+  left: 70%;
+  top: 30px;
+  width: 12px;
+  height: 10px;
+}
+
+.icons-in-secound-part {
+  position: absolute;
+  right: 0;
 }
 
 img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  margin-left: 15px;
 }
 
 .name-of-manager {
-  position: absolute;
-  left: 40%;
-  bottom: 43%;
+  margin-left: 40%;
   color: #17b2c7;
+}
+
+.title-of-graf {
+  margin-left: 30%;
 }
 
 a {
@@ -231,9 +297,18 @@ a {
 }
 
 .listinsidebar {
-  position: absolute;
   margin-top: 6px;
   left: 6px;
+  font-size: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.listinsidebar-2 {
+  position: absolute;
+  margin-top: 3px;
+  left: 25px;
   font-size: 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -250,19 +325,100 @@ a {
 }
 
 .button-graph {
-  width: 40%;
+  width: 20%;
   height: 20%;
+  padding: 6px;
+  margin: 10px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.button-graph:hover {
+  background-color: #e6e6e6;
+}
+
+.green-ball, .orange-ball, .blue-ball {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.blue-ball {
+  background-color: #2eb8b8;
+  position: absolute;
+  left: 15%;
+}
+
+.orange-ball {
+  background-color: #ff9933;
+  position: absolute;
+  left: 46%;
+}
+
+.green-ball {
+  background-color: #00b300;
+  position: absolute;
+  right: 26%;
+}
+
+.link-box {
+  position: relative;
+  margin: auto;
+  width: 70%;
+  height: 10%;
+  border-bottom: solid #a8a8a8 0.05px;
+}
+
+.link-box:hover {
+  background-color: #e6e6e6;
+}
+
+.button-add {
+  background-color: #ff9933;
   padding: 10px;
+  text-align: center;
+  top: 20px;
+  width: 100px;
+  height: 40px;
+  color: #ffffff;
+  margin: 30px auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.orange-rectangle {
+  width: 3px;
+  height: 10px;
+  background-color: #ff9933;
+  padding: 0;
+  margin-left: 6px;
+  position: absolute;
+  left: 0;
+  margin-top: 8%;
+}
+
+.sidebar-list h2 {
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.sidebar-list {
+  margin-left: 6px;
+  width: 100%;
+  height: 15px;
+}
+
+.sidebar-list:hover {
+  background-color: #b3b3b3;
+  color: white;
+}
+
+.sidebar-list:hover .orange-rectangle {
+  display: none;
 }
 
 @media (max-width: 1100px) {
-  .name-of-manager {
-    left: 40%;
-    bottom: 40%;
-  }
-}
-
-@media (max-width: 1050px) {
   .sidebar {
     display: none;
   }
