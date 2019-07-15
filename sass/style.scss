@@ -228,6 +228,7 @@ h1 {
 .icons-in-secound-part {
     position: absolute;
     right: 0;
+    display: none;
 }
 img {
     height: 50px;
@@ -306,6 +307,9 @@ a {
     @include bottom-border;
     &:hover {
         background-color: #e6e6e6;
+        .icons-in-secound-part {
+            display: block;
+        }
     }
 }
 
@@ -324,13 +328,13 @@ a {
 }
 .orange-rectangle {
     width: 3px;
-    height: 10px;
+    height: 28px;
     background-color: #ff9933;
     padding: 0;
     margin-left: 6px;
     position: absolute;
     left: 0;
-    margin-top: 8%;
+    display: none;
 }
 .sidebar-list {
     h2 {
@@ -347,7 +351,7 @@ a {
         background-color: #b3b3b3;
         color: white;
         .orange-rectangle {
-            display: none;
+            display: inline-block;
         }
     }
 }
