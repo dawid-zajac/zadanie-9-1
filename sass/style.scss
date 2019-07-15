@@ -221,7 +221,7 @@ h1 {
 .title-sidebar-icon {
     position: absolute;
     left: 70%;
-    top: 30px;
+    top: 40px;
     width: 12px;
     height: 10px;;
 }
@@ -356,6 +356,12 @@ a {
     }
 }
 
+@media  (max-width: 1250px){
+    .sidebar-title {
+        font-size: 15px;
+    }
+
+}
 @media ( max-width: 1100px){
     .sidebar {
         display: none;
@@ -376,5 +382,8 @@ a {
     .statistic {
         padding: 0;
     }
+
+}
+@media ( max-width: 600px) {
 
 }
