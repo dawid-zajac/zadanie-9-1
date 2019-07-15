@@ -251,10 +251,10 @@ a {
     font-size: 15px;
     justify-content: space-between;
 }
-.listinsidebar-2 {
+.iconsinsidebar {
     position: absolute;
     margin-top: 3px;
-    left: 25px;
+    left: 15px;
     font-size: 15px;
     justify-content: space-between;
 }
@@ -340,8 +340,7 @@ a {
     }
 }
 .sidebar-list {
-    margin-left: 6px;
-    width: 100%;
+    width: 90%;
     height: 15px;
 
     &:hover {
